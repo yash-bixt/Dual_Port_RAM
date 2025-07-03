@@ -16,8 +16,8 @@ integer i;
 always @(posedge clk) begin
     if (rst) begin
         for (i = 0; i < 256; i = i + 1)
-            mem[i] <= 16'b0000000000000000;
-        mem[i] <= 16'b0000000000000000;
+            mem[i] <= 16'h0000;
+        mem[i] <= 16'h0000;
     end else begin
         if (wr)
             mem[w_addr] <= din;
