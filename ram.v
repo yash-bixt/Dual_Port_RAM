@@ -10,7 +10,7 @@ module dualport_ram (
     output reg [15:0] dout
 );
 
-reg [15:0] mem [255:0];
+    reg [15:0] mem [255:0]; //256x16
 integer i;
 
 always @(posedge clk) begin
